@@ -52,7 +52,7 @@ function CartPage() {
                 <h1>Shopping Cart</h1>
                 {cartItems.map((item) => (
                     <div key={item.id} className="cart-item">
-                        <img src={`http://localhost:5000${item.image}`} alt={item.name} className="item-image" />
+                        <img src={`https://deploy-1-w166.onrender.com${item.image}`} alt={item.name} className="item-image" />
                         <div className="item-details">
                             <h3>{item.name}</h3>
                             <p className="item-price">₹{item.price.toFixed(2)}</p>

@@ -52,7 +52,7 @@ function Wishlist() {
             <div key={item.id} className="wishlist-item">
               <div className="wishlist-item-image">
                 <Link to={`/product/${item.id}`}>
-                  <img src={`http://localhost:5000${item.image}`} alt={item.name} />
+                  <img src={`https://deploy-1-w166.onrender.com${item.image}`} alt={item.name} />
                 </Link>
                 <button onClick={() => removeFromWishlist(item)} className="remove-btn">
                   <i className="ri-close-line"></i>

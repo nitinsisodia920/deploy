@@ -30,7 +30,7 @@ const Signup=()=>{
           }
         try{
             console.log('login start ', name,email,password);
-            const { data }= await Axios.post('http://127.0.0.1:5000/api/users/signup',{
+            const { data }= await Axios.post('https://deploy-1-w166.onrender.com/api/users/signup',{
                 "name"  : name,
                 "email" : email,
                 "password": password

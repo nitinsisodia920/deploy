@@ -82,7 +82,7 @@ function Luxurious() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const result = await axios.get('/api/products/luxurious');
+        const result = await axios.get('https://deploy-1-w166.onrender.com/api/products/luxurious');
         setLuxuriousProducts(result.data);
         setLoading(false);
       } catch (err) {
@@ -139,7 +139,7 @@ function Luxurious() {
             <div className="product" id="product" key={product.id}>
               <div className="product-image-container">
                 <Link to={`/product/${product.id}`}>
-                  <img src={`http://localhost:5000${product.image}`} alt={product.name} />
+                  <img src={`https://deploy-1-w166.onrender.com${product.image}`} alt={product.name} />
                 </Link>
                 <button 
                   onClick={() => toggleWishlist(product)} 
